@@ -1,0 +1,12 @@
+name: Simple Test Job
+
+on:
+  workflow_dispatch:  # Allows manual trigger from GitHub UI
+
+jobs:
+  test-job:
+    runs-on: self-hosted
+
+    steps:
+      - run: echo "Hello World from GitHub Actions!"
+
